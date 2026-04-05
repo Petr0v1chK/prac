@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости — КУМЗ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f8f9fa; }
+
+        header { background: #003087; color: white; padding: 15px 0; }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo img { height: 68px; }
+
+        nav {
+            background: #0055cc;
+            padding: 13px 0;
+        }
+        nav ul {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            padding: 0 20px;
+        }
+        nav a { color: white; text-decoration: none; font-weight: 500; }
+        nav a:hover, nav a.active { text-decoration: underline; }
+
+        .content {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        h1 { color: #003087; margin-bottom: 40px; }
+        .news-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 60px;
+            background: white;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-radius: 6px;
+        }
+        .news-item img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .news-date { color: #0055cc; font-weight: bold; margin-bottom: 8px; }
+        .news-title { font-size: 20px; color: #003087; margin-bottom: 12px; }
+
+        footer {
+            background: #2c2c2c;
+            color: #ccc;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 80px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <img src="https://via.placeholder.com/85x68/003087/ffffff?text=КУМЗ" alt="Логотип КУМЗ">
+                <div><strong>Каменск-Уральский</strong><br>металлургический завод</div>
+            </div>
+            <div style="font-size: 28px;">🔍</div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="o-kompanii.html">О компании</a></li>
+            <li><a href="novosti.html" class="active">Новости</a></li>
+            <li><a href="obratnaya-svyaz.html">Обратная связь</a></li>
+            <li><a href="#">Информация для поставщиков</a></li>
+            <li><a href="#">Информация для заказчиков</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Новости</h1>
+
+        <div class="news-item">
+            <img src="https://via.placeholder.com/300x200/003087/ffffff?text=Металл-Экспо+2024" alt="Награды">
+            <div>
+                <div class="news-date">01.11.2024</div>
+                <div class="news-title">КУМЗ «Металл-Экспо 2024». Золотая и Серебряная медали</div>
+                <p>Решением оргкомитета международного промышленного форума КУМЗ награждён медалями за инновационную технологию и за книгу о заводе.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <img src="https://via.placeholder.com/300x200/0055cc/ffffff?text=Договор" alt="Договор">
+            <div>
+                <div class="news-date">30.10.2024</div>
+                <div class="news-title">Договор между ПАО «КУМЗ» и АО «ЦКБ по СПК им. Р.Е. Алексеева»</div>
+                <p>Для производства судов на подводных крыльях. 30 октября на полях международного промышленного форума «Металл-Экспо 2024» состоялось подписание Договора о долгосрочном партнёрстве.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2022 ПАО «Каменск-Уральский металлургический завод» (ПАО КУМЗ)<br>
+        ОГРН от 01.10.2022 • ИФНС по Верх-Исетскому району г. Екатеринбурга<br>
+        Телефон: +7 123 456 78 91
+    </footer>
+
+</body>
+</html>
